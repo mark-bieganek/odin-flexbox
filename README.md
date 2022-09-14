@@ -1,2 +1,4 @@
 # odin-flexbox
-Learning Flexbox with the Odin Project
+Let's Flex!
+
+A journey to learn CSS Flexbox through The Odin Project.
