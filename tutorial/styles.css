@@ -23,6 +23,10 @@
   justify-content: flex-end;
 }
 
+.signup {
+  margin-left: auto;
+}
+
 .login {
   margin-left: 20px;
 }
@@ -40,12 +44,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.subscribe,
-.social {
-  align-self: flex-end;
-  margin-bottom: 20px;
 }
 
 .photo-grid-container {
