@@ -1,6 +1,7 @@
 
 .flex-container {
     display: flex;
+    flex-direction: column;
   }
   
   /* this selector selects all divs inside of .flex-container */
@@ -9,13 +10,14 @@
     border: 4px solid brown;
     height: 100px;
     width: 250px;
-    flex: 1; /* shorthand for flex-grow: 1, flex-shrink: 1, flex-basis: 0 */
+    /* flex: 1; /* shorthand for flex-grow: 1, flex-shrink: 1, flex-basis: 0 */
+    /* flex: 1 1 50px; /* shorthand for flex-grow: 1, flex-shrink: 1; flex-basis: 50px */
     flex: 1 1 auto; /* shorthand for flex-grow: 1, flex-shrink: 1; flex-basis: auto */
   }
 
 .flex-container .two {
   /* experiment with each! */
-  flex-shrink: 0; /* this item will not shrink when flex-container is smaller than 250px */
-  flex-shrink: 1; /* this would be redundant as we've defined the same property on the parent div */
-  flex-shrink: 2; /* this item will shrink at a rate of 2, double that of the other items */
+  /* flex-shrink: 0; /* this item will not shrink when flex-container is smaller than 250px */
+  /* flex-shrink: 2; /* this item will shrink at a rate of 2, double that of the other items */
+  /* flex-shrink: 1; /* this would be redundant as we've defined the same property on the parent div */
 }
