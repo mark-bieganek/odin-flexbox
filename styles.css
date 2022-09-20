@@ -8,5 +8,14 @@
     background: peachpuff;
     border: 4px solid brown;
     height: 100px;
-    flex: 1;
+    width: 250px;
+    flex: 1; /* shorthand for flex-grow: 1, flex-shrink: 1, flex-basis: 0 */
+    flex: 1 1 auto; /* shorthand for flex-grow: 1, flex-shrink: 1; flex-basis: auto */
   }
+
+.flex-container .two {
+  /* experiment with each! */
+  flex-shrink: 0; /* this item will not shrink when flex-container is smaller than 250px */
+  flex-shrink: 1; /* this would be redundant as we've defined the same property on the parent div */
+  flex-shrink: 2; /* this item will shrink at a rate of 2, double that of the other items */
+}
